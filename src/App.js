@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Card from './Components/Card'
+import Contact from './Components/Contact'
+import ShowComponent from './Components/ShowComponent'
+import Table from './Components/Table'
+import TableTwo from './Components/TableTwo'
 
-function App() {
+import Data from './data.json'
+
+export default function App() {
+
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <div>
+      {/* {Data.map((item,ind)=><Card key = {ind} titleText={item.title} descText = {item.desc}/>)} */}
 
-export default App;
+    <ShowComponent/>
+
+
+     
+    </div>
+  )
+}
